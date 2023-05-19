@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div align="center">
+    <input type="button" onclick="batDau()" value="Bắt đầu">
+</div>
+<script>
+    /*
+    Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99,
+            hiển thị hộp thoại thông báo là đã hoàn thành.
+
+      for (let i = 0; i < 100 ; i++) {
+          console.log(i);
+        if (i == 99) {
+            alert("Hoàn thành");
+          break;
+
+        }
+      }*/
+
+
+    // Bài 2:
+    /*
+    let temp = parseInt(prompt('Nhập nhiệt độ'));
+    while (temp < 20 || temp > 100){
+            temp = parseInt(prompt('Nhập nhiệt độ:'))
+        if ( temp < 20 ){
+            alert('tang');
+        }else {
+            alert('giam')
+        }
+    }*/
+
+
+
+    // Bài 3: 20 số trong dãy  fibonacci
+
+
+    /*let x = parseInt(prompt("Enter number: "));
+    let a = 0, b = 1, d = 0;
+    for (let i = 0; d < x /!*i>-1*!/; i++) {
+        document.write(a + "<br/>")
+        let c = a + b;
+        a = b;
+        b = c;
+        d++;
+        /!*if (d == x) {
+            break;
+        }*!/
+    }*/
+
+    //Bài 4: Số đầu tiên trong dẫy chia hết cho 5
+    /* let x = parseInt(prompt("Enter number: "));
+     let a = 0, b = 1, d = 0;
+     for (let i = 0; i < 1000; i++) {
+         document.write(a + "<br/>")
+         let c = a + b;
+         a = b;
+         b = c;
+         d++;
+         if (d == x) {
+             break;
+         }
+         if (a%5===0){
+             document.write('a = ' + a + ' chia hết cho 5')
+             break;
+         }
+     }*/
+
+
+
+    // Bài 5: tổng 20 số trong dãy \/*let x = parseInt(prompt("Enter number: "));
+    /* let x = parseInt(prompt("Enter number: "));
+     let a = 0, b = 1, d = 0, sum = 0;
+     for (let i = 0; i < 1000; i++) {
+         document.write(`Số thứ ${i + 1} trong dãy: ${a} <br>`)
+         sum = sum + a;
+         let c = a + b;
+         a = b;
+         b = c;
+         d++;
+         if (d == x) {
+             break;
+         }
+
+     }document.write("Tổng 20 số đầu tiên: " + sum)*/
+
+    // Bài 6: Tính tổng của 30 số chia hết cho 7
+
+
+    /* let b = parseInt(prompt("Enter numebr: "));
+     let sum = 0, c=0;
+     for (let i = 0; i>-1 ; i++) {
+         if (i % 7 === 0) {
+             sum = sum + i;
+             c++;
+             document.write('Số thứ' + c + ':' + i + ' <br>');
+         }
+         if ( c===b ) {
+             break;
+         }
+
+     }
+     document.write(`Tổng các số chia hết cho 7: (${c} số) ${sum}`);
+ */
+
+    //Bai7: 1-100, %3 = Fizz, %5 = Buzz
+
+
+
+    /* for (let i =  1; i <= 100; i++) {
+         document.write(i + '<br>');
+         if (i%3===0) {
+             document.write("Fizz"+ '<br>');
+             continue;
+         }
+         if (i%5===0) {
+             document.write("Buzz"+ ' <br>');
+             continue;
+         }
+     }*/
+
+    //Bai 8: GAme đooán số.
+
+
+
+    /*function batDau() {
+        let x = parseInt(prompt('Số bạn đoán trong khoảng lớn nhất là bao nhiêu: '));
+        let y = parseInt(Math.floor(Math.random()*x));
+        console.log(y);
+        let z = parseInt(prompt('Nhập số bạn dự đoán: '));
+        let count = 0;
+        while (z !== y) {
+            count ++;
+            if (count == 4){
+                document.write('Bạn hết lượt');
+                break;
+            } else if (y > z ){
+                alert("Số đoán nhỏ hơn");
+            } else {
+                alert("Số đoán lớn hơn");
+            }
+            z = prompt("Nhập số đoán")
+
+        }if (count == 4) {
+            document.write("Hết lượt");
+        }else {
+            document.write("Đoán đúng")
+        }
+
+    }
+*/
+
+
+
+
+
+</script>
+</body>
+</html>
